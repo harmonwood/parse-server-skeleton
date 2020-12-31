@@ -1,0 +1,21 @@
+{
+  "name": "parse-server-skeleton",
+  "version": "0.1.0",
+  "description": "Raw skeleton for a docker based parse server app",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/harmonwood/parse-server-skeleton"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.17.1",
+    "parse-server": "^4.5.0"
+  },
+  "scripts": {
+    "start": "node ./index.js"
+  },
+  "engines": {
+    "node": ">=8"
+  }
+}

@@ -1,0 +1,19 @@
+version: '3.5'
+
+services:
+  mongodb:
+    image: mongo
+    ports:
+      - 27017:27017
+
+  parse:
+    build: .
+    volumes:
+      - ./cloud:/parse-server/cloud
+      - ./public:/parse-server/public
+    ports:
+      - 1337:1337
+    env_file:
+      - .env
+    depends_on:
+      - mongodb
